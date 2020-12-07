@@ -1,15 +1,16 @@
 ﻿using System;
+using System.Diagnostics.Contracts;
 
 namespace WebApplication
 {
     public class Facture
     {
-        public int numero;
-        public string nomClient;
-        public DateTime dateEmission;
-        public DateTime dateEcheance;
-        public double montantDu;
-        public double montantRegle;
+         private int numero;
+         private string nomClient;
+         private DateTime dateEmission;
+         private DateTime dateEcheance;
+         private double montantDu;
+         private double montantRegle;
 
         public Facture(int numero, string nomClient, DateTime dateEmission, DateTime dateEcheance, double montantDu, double montantRegle)
         {
@@ -19,6 +20,42 @@ namespace WebApplication
             this.dateEcheance = dateEcheance;
             this.montantDu = montantDu;
             this.montantRegle = montantRegle;
+        }
+
+        public int Numero
+        {
+            get => numero;
+            set => numero = value;
+        }
+
+        public string NomClient
+        {
+            get => nomClient;
+            set => nomClient = value;
+        }
+
+        public DateTime DateEmission
+        {
+            get => dateEmission;
+            set => dateEmission = value;
+        }
+
+        public DateTime DateEcheance
+        {
+            get => dateEcheance;
+            set => dateEcheance = value;
+        }
+
+        public double MontantDu
+        {
+            get => montantDu;
+            set => montantDu = value;
+        }
+
+        public double MontantRegle
+        {
+            get => montantRegle;
+            set => montantRegle = value;
         }
     }
 }

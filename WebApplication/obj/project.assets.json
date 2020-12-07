@@ -1156,11 +1156,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Dev\\Blazor\\WebApplication\\WebApplication\\WebApplication.csproj",
+      "projectUniqueName": "E:\\Dev\\Blazor\\WebApplication\\Facturation_net\\WebApplication\\WebApplication.csproj",
       "projectName": "WebApplication",
-      "projectPath": "E:\\Dev\\Blazor\\WebApplication\\WebApplication\\WebApplication.csproj",
+      "projectPath": "E:\\Dev\\Blazor\\WebApplication\\Facturation_net\\WebApplication\\WebApplication.csproj",
       "packagesPath": "C:\\Users\\viann\\.nuget\\packages\\",
-      "outputPath": "E:\\Dev\\Blazor\\WebApplication\\WebApplication\\obj\\",
+      "outputPath": "E:\\Dev\\Blazor\\WebApplication\\Facturation_net\\WebApplication\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\viann\\AppData\\Roaming\\NuGet\\NuGet.Config",

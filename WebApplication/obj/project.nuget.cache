@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cQzLhhYRNLWZ6qWodhZEFxEqupCCO8JX8bgXgdOsl+X1c27XOIN1F3tHix7PG5GlEK/9PcSGrZEBUkFt1eaJNA==",
+  "dgSpecHash": "wTFa8CdbixVt5iKlpa+IpKFM950viVGcWrMgQq0VOeIvw51Ih3f64ICbZ19lmM6EW8SwXwoVYtVutNCkMPPbEA==",
   "success": true,
-  "projectFilePath": "E:\\Dev\\Blazor\\WebApplication\\WebApplication\\WebApplication.csproj",
+  "projectFilePath": "E:\\Dev\\Blazor\\WebApplication\\Facturation_net\\WebApplication\\WebApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\viann\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.0\\microsoft.aspnetcore.authorization.5.0.0.nupkg.sha512",
     "C:\\Users\\viann\\.nuget\\packages\\microsoft.aspnetcore.components\\5.0.0\\microsoft.aspnetcore.components.5.0.0.nupkg.sha512",
