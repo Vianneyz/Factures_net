@@ -1,0 +1,28 @@
+﻿@page "/counter"
+
+@using Facturation.Shared
+
+@inject NavigationManager nav
+@inject IBusinessData data
+
+<h1>Counter</h1>
+
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="e => IncrementCount(1)">Click me</button>
+<button class="btn btn-primary" @onclick="e => IncrementCount(2)">Click me (double)</button>
+
+<input @bind="currentCount" />
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount(int val)
+    {
+        currentCount += val;
+        if(currentCount==10)
+        {
+            nav.NavigateTo("/fetchdata");
+        }
+    }
+}

@@ -1,0 +1,44 @@
+﻿@page "/factures"
+@using Facturation.Shared
+@inject HttpClient Http
+
+<h1>Factures</h1>
+
+@if (factures == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Numero</th>
+                <th>Client</th>
+                <th>Montant</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var f in factures)
+            {
+                <tr>
+                    <td>@f.DateReglement.ToShortDateString()</td>
+                    <td>@f.Numero</td>
+                    <td>@f.Client</td>
+                    <td>@f.Montant</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private Facture[] factures;
+
+    protected override async Task OnInitializedAsync()
+    {
+        factures = await Http.GetFromJsonAsync<Facture[]>("api/factures");
+    }
+
+}

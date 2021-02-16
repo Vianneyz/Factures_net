@@ -1,0 +1,41 @@
+﻿@page "/"
+@using Facturation.Shared
+@inject HttpClient Http
+
+<h1>Tableau de bord</h1>
+
+@if (dashboard == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <h2>CA : <strong>@dashboard.CA €</strong></h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Montant</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var f in dashboard.MontantDus)
+            {
+                <tr>
+                    <td>@f.Date.ToShortDateString()</td>
+                    <td>@f.Montant</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private DashboardDto dashboard;
+
+    protected override async Task OnInitializedAsync()
+    {
+        dashboard = await Http.GetFromJsonAsync<DashboardDto>("api/dashboard");
+    }
+
+}
